@@ -1,14 +1,16 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import {Router, Route} from "react-router"
+import {Router, Route, IndexRoute, browserHistory} from "react-router"
 
-import App from "./components/App.js"
+import App from "./components/App"
+import Message from "./components/Message"
 
-require("./less/main.less")
+import "./less/main.less"
 
 const routes =
-<Router>
-    <Route path={"/"} component={App}>
+<Router history={browserHistory}>
+    <Route path="/" component={App}>
+        <Route path="/message/:id" />
     </Route>
 </Router>
 

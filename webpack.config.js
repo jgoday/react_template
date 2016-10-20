@@ -42,5 +42,8 @@ module.exports = {
         loader: "file-loader" 
       }
     ]
-  }
+  },
+  devServer: {
+    historyApiFallback: true
+  }
 };

@@ -1,2 +1,3 @@
 # react_template
-Simple template for react
+Simple template for React using Less, webpack and ES6.
+
